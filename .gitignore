@@ -1,0 +1,6 @@
+# OS
+.DS_Store
+
+squid.passwd
+log/
+ips.txt

@@ -1,0 +1,12 @@
+services:
+  squid-container:
+    image: ubuntu/squid:latest
+    restart: always
+    container_name: squid-container
+    volumes:
+      - ./squid.conf:/etc/squid/squid.conf
+      - ./ips.list:/etc/squid/ips.txt
+      - ./log:/var/log/squid
+      - ./squid.passwd:/etc/squid/squid.passwd
+    ports:
+      - 80:3128
