@@ -5,7 +5,7 @@ services:
     container_name: squid-container
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
-      - ./ips.list:/etc/squid/ips.txt
+      - ./ips.txt:/etc/squid/ips.txt
       - ./log:/var/log/squid
       - ./squid.passwd:/etc/squid/squid.passwd
     ports:
