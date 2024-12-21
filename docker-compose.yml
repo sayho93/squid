@@ -1,8 +1,8 @@
 services:
   squid-container:
     image: ubuntu/squid:latest
-    restart: always
     container_name: squid-container
+    restart: always
     volumes:
       - ./squid.conf:/etc/squid/squid.conf
       - ./ips.txt:/etc/squid/ips.txt
